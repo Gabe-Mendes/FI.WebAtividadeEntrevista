@@ -1,0 +1,6 @@
+﻿CREATE PROC [dbo].[FI_SP_ExcluiBeneficiario]
+	@ID BIGINT
+AS
+BEGIN
+	DELETE FROM [dbo].[BENEFICIARIOS] WHERE ID = @ID
+END

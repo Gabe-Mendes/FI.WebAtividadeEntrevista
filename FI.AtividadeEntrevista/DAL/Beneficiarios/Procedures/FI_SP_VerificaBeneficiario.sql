@@ -1,0 +1,6 @@
+﻿CREATE PROC [dbo].[FI_SP_VerificaBeneficiario]
+	@CPF VARCHAR(11)
+AS
+BEGIN
+	SELECT 1 FROM [dbo].[BENEFICIARIOS] WHERE CPF = @CPF
+END
